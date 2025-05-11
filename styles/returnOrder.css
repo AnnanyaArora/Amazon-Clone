@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.orders-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    color: #333; /* Dark gray text for better readability */
+}
+
+.orders-container {
+    padding: 20px;
+}
+
+.order-card {
+    display: flex;
+    background-color: #ffffff; /* White background for the order cards */
+    border: 3px solid #4CAF50; /* Green border for a fresh look */
+    border-radius: 6px;
+    margin: 15px auto;
+    max-width: 800px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.order-img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.order-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333; /* Dark gray for order title */
+}
+
+.order-details p {
+    margin: 5px 0;
+    color: #555; /* Slightly lighter gray for details */
+}
+
+.order-btn {
+    margin-top: 10px;
+    background-color: #ff9800; /* Warm orange background for the button */
+    border: 1px solid #ff5722; /* Darker orange border for contrast */
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #fff; /* White text on the button */
+    border-radius: 4px;
+}
+
+.order-btn:hover {
+    background-color: #ff5722; /* Darker orange when hovering */
+    border: 1px solid #ff9800; /* Lighter border when hovering */
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/amazon-mainPage.css">
+    <link rel="stylesheet" href="styles/cart-page.css">
+</head>
+<body>
+    <header class="nav-bar">
+        
+        
+        <div class="nav-logo">
+            <a  href="index.html" class="amazon-logo border">
+                <img src="image/amazon-logo/amazon-logo-white.png" alt="Amazon-Logo" class="Amazon-Logo" />
+            </a>
+        </div>
+
+        <div class="nav-address">
+            <p class="deliver">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="India">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-category">
+                <option value="all">All</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+            </select>
+
+            <input type="text" class="search-input" placeholder="Search Amazon" />
+
+            <button class="search-button">
+                <img src="image/logo/search-icon.png" alt="Search" class="search-icon"/>
+            </button>
+        </div>
+
+        <div class="nav-sign-in border">
+            <p><span>Hello, sign in</span></p>
+            <p class="account">Accounts & Lists</p>
+        </div>
+
+        <a href="returnOrder.html" class="returnorder border">
+            <p><span>Returns</span></p>
+            <p class="orders">&Orders</p>
+        </a>
+         <!-- Track Order (Added link to track page) -->
+    <a href="track.html" class="returnorder border">
+        <p><span>Track</span></p>
+        <p class="orders">Order</p>
+      </a>
+
+        <div class="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+        </div>
+    </header>
+
+    <h2 class="cart-title">Your Shopping Cart</h2>
+
+    <main class="cart-container">
+        <div  id="cart-item" class="cart-item">
+        </div>
+
+    
+
+        <div class="total-container"><script src="script/cart-utils.js"></script>
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                updateCartCount();
+              });
+            </script>
+            
+            <p  id="total-price"class="total-price">Total Price:</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+    
+    <script src="script/cart-items.js"></script>
+    <script src="script/search.js"></script>
+
+</body>
+</html>
+
+   

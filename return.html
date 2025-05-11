@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Returns</title>
+  <link rel="stylesheet" href="styles/amazon-mainPage.css">
+  <link rel="stylesheet" href="styles/return.css" />
+</head>
+<body class="return-page">
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="track.html">Track Order</a>
+      <a href="return.html" class="active">Returns</a> 
+      <a href="index.html" class="nav-logo">
+        <div class="amazon-logo border">
+          <img src="image/amazon-logo/amazon-logo-white.png" alt="Amazon-Logo" class="amazon-logo">
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="return-container">
+    <h2>Return Your Product</h2>
+    
+    <form class="return-form">
+      <label for="order-id">Order ID:</label>
+      <input type="text" id="order-id" name="order-id" required />
+
+      <label for="product-name">Product Name:</label>
+      <input type="text" id="product-name" name="product-name" required />
+
+      <label for="reason">Reason for Return:</label>
+      <select id="reason" name="reason" required>
+        <option value="damaged">Damaged</option>
+        <option value="wrong-item">Wrong Item</option>
+        <option value="no-longer-needed">No Longer Needed</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <button type="submit" class="submit-btn">Submit Return Request</button>
+    </form>
+  </main>
+</body>
+</html>

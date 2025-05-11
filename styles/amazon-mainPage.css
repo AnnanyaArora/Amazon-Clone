@@ -1,0 +1,335 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: #17181d;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazon-logo, .Amazon-Logo {
+  height: 30px;
+  object-fit: contain;
+}
+
+.add-icon {
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+}
+
+.nav-address {
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.nav-address:hover {
+  border: 1.5px solid #cccccc;
+}
+
+.deliver:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+.India {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-search {
+  display: flex;
+  width: 720px;
+  height: 40px;
+  border-radius: 4px;
+  border: 3px solid #febd69;
+}
+
+.search-category {
+  background-color: rgb(241, 231, 231);
+  font-size: 15px;
+  border: none;
+  width: 55px;
+  height: 36px;
+  padding: 0 5px;
+  border-radius: 1.7px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-input {
+  height: 36px;
+  width: 620px;
+  padding: 0 10px;
+  border-radius: 1.7px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search-button {
+  height: 36px;
+  width: 50px;
+  background-color: #febd69;
+  border-radius: 1.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.nav-sign-in, .returnorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 4px 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav-sign-in span, .returnorder span {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.account, .orders {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.nav-cart {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-cart:hover {
+  border: 1px solid white;
+}
+
+.row {
+  height: 30px;
+  background-color: #3b4343;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+}
+
+.bars {
+  font-size: medium;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+
+.text:hover {
+  border: 1.5px solid white;
+  color: white;
+  background-color: #333;
+}
+
+.prime {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.prime option {
+  color: black;
+  background-color: white;
+}
+
+.line {
+  background-color: wheat;
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.para {
+  position: relative;
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image_main {
+  height: 600px;
+  width: 1520px;
+}
+
+.main {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+  .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .nav-search {
+      width: 100%; /* Full width on mobile */
+  }
+}
+
+.product-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1.5px solid black;
+  border-color: #17181d;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  object-fit: cover;
+  height: 160px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.Add-To-Cart {
+  background-color: #febd69;
+  color: #111;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.Add-To-Cart:hover {
+  background-color: #e84b0d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #ff9900; /* Optional: Amazon-like hover color */
+}
+.footer {
+  background-color: #232f3e;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #3a4553;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}

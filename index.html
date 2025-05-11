@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/amazon-mainPage.css" >
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="nav-bar">
+
+    <!-- Amazon Logo (Now links to home page) -->
+    <a href="index.html" class="nav-logo">
+      <div class="amazon-logo border">
+        <img src="image/amazon-logo/amazon-logo-white.png" alt="Amazon-Logo" class="amazon-logo">
+      </div>
+    </a>
+
+    <!-- Address -->
+    <div class="nav-address">
+      <p class="deliver">Deliver to</p>
+      <div class="add-icon">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="India">India</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="nav-search">
+      <select class="search-category">
+        <option value="all">All</option>
+        <option value="books">Books</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+      </select>
+      <input type="text" class="search-input" id="search-input" placeholder="Search Amazon"/>
+      <button class="search-button" onclick="searchProducts()">
+        <img src="image/logo/search-icon.png" alt="Search" class="search-icon"/>
+      </button>
+    </div>
+
+    <!-- Sign In -->
+    <div class="nav-sign-in border">
+      <p><span>Hello, sign in</span></p>
+      <p class="account">Accounts & Lists</p>
+    </div>
+
+    <!-- Returns & Orders (Now correctly linked) -->
+    <a href="returnOrder.html" class="returnorder border">
+      <p><span>Returns</span></p>
+      <p class="orders">& Orders</p>
+    </a>
+
+    <!-- Track Order (Added link to track page) -->
+    <a href="track.html" class="returnorder border">
+      <p><span>Track</span></p>
+      <p class="orders">Order</p>
+    </a>
+
+    <!-- Cart -->
+    <a href="cart.html" class="nav-cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+      <span id="cart-count"></span>
+    </a>
+
+  </header>
+
+  <!-- Navigation Panel -->
+  <nav class="panel">
+    <div class="row">
+      <i class="fa-solid fa-bars bars"></i><span>All</span>
+      <div class="text">MX Player</div>
+      <div class="text">Sell</div>
+      <div class="text">Bestsellers</div>
+      <div class="text">Mobiles</div>
+      <div class="text">Today's Deals</div>
+      <select class="text prime">
+        <option value="prime">Prime</option>
+        <option value="goofy">Goofy</option>
+        <option value="time">Time</option>
+      </select>
+      <div class="text">Customer Service</div>
+      <div class="text">New Releases</div>
+      <p class="text">Electronics</p>
+      <p class="text">Fashion</p>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="line">
+      <p class="para">
+        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+        Click here to go to <a href="#">amazon.in</a>
+      </p>
+      <img alt="box1_img" class="image_main" src="image/product/hero_image.jpg">
+    </div>
+
+    <!-- Product Grid -->
+    <section class="product-grid" id="product-grid">
+     
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect with Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Let Us Help You</h4>
+      <ul>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Returns Centre</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Amazon Clone. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script/cart-logo.js"></script>
+  <script src="script/search.js"></script>
+  <script src="script/cart-items.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      updateCartCount();
+    });
+  </script>
+  
+</body>
+</html>

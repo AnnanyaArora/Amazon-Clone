@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/amazon-mainPage.css">
+    <link rel="stylesheet" href="styles/returnOrder.css">
+</head>
+<body>
+    <header class="nav-bar">
+       
+        <a  href="index.html" class="nav-logo">
+            <div class="amazon-logo border">
+                <img src="image/amazon-logo/amazon-logo-white.png" alt="Amazon-Logo" class="amazon-logo" />
+            </div>
+        </a>
+
+        <div class="nav-address">
+            <p class="deliver">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="India">India</p>
+            </div>
+        </div>
+
+        <!-- Category Select -->
+        <div class="nav-search">
+            <select class="search-category">
+                <option value="all">All</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+            </select>
+
+            <!-- Search Bar -->
+            <input type="text" class="search-input" placeholder="Search Amazon" />
+
+            <!-- Search Button with icon -->
+            <button class="search-button">
+                <img src="image/logo/search-icon.png" alt="Search" class="search-icon"/>
+            </button>
+        </div>
+
+        <div class="nav-sign-in border">
+            <p><span>Hello, sign in</span></p>
+            <p class="account">Accounts & Lists</p>
+        </div>
+
+        <a href="returnOrder.html" class="returnorder border">
+            <p><span>Returns</span></p>
+            <p class="orders">&Orders</p>
+        </a>
+         
+          <!-- Track Order (Added link to track page) -->
+    <a href="track.html" class="returnorder border">
+        <p><span>Track</span></p>
+        <p class="orders">Order</p>
+      </a>
+
+        <a href="cart.html" class="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+        </a>
+    </header>
+
+    <main class="orders-container">
+        <h2 class="orders-title">Your Orders</h2>
+
+        <!-- Order 1 -->
+        <div class="order-card">
+            <img src="image/product/blackout-curtains-black.jpg" alt="Blackout Curtains" class="order-img" />
+            <div class="order-details">
+                <h3>Blackout Curtains</h3>
+                <p>Order Date: March 10, 2025</p>
+                <p>Status: Delivered</p>
+                <button class="order-btn">Return Item</button>
+            </div>
+        </div>
+    
+        <!-- Order 2 -->
+        <div class="order-card">
+            <img src="image/product/bathroom-rug.jpg" alt="Grey absorbent bathroom rug" class="order-img" />
+            <div class="order-details">
+                <h3>Bathroom Rug</h3>
+                <p>Order Date: February 21, 2025</p>
+                <p>Status: In Transit</p>
+                <button class="order-btn">Track Package</button>
+            </div>
+        </div>
+    </main>
+    <script src="script/search.js"></script>
+    <script src="script/cart-logo.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const buttons = document.querySelectorAll('.order-btn');
+          buttons.forEach(btn => {
+            if (btn.textContent.includes('Return')) {
+              btn.addEventListener('click', () => {
+                window.location.href = 'return.html';
+              });
+            } else if (btn.textContent.includes('Track')) {
+              btn.addEventListener('click', () => {
+                window.location.href = 'track.html';
+              });
+            }
+          });
+        });
+      </script>
+      
+
+</body>
+</html>
